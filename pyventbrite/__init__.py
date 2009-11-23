@@ -286,9 +286,10 @@ class EventBrite(object):
 
 if __name__ == '__main__':
     app_key = ''
+    user_key = ''
     event_id = ''
 
-    eventbrite = EventBrite(app_key)
+    eventbrite = EventBrite(app_key, user_key=user_key)
 
     eventbrite.events.event_get(event_id)
     eventbrite.events.event_list_attendees(event_id)
