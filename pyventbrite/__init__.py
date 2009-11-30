@@ -267,9 +267,6 @@ class EventBrite(object):
         else:
             response = urlread(query_url)
 
-        print 'QUERYURL :: %s' % query_url
-        print 'RESPONSE :: %s' % response
-
         return self._parse_response(response, method)
 
 
